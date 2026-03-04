@@ -1,2 +1,2 @@
-** Emacs.d
+* Emacs.d
 This is a init file for emacs, refer to [[https://git.sr.ht/%7Etechnomancy/better-defaults][better defaults]], [[https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/][basic and capable configuration]], [[https://github.com/daviwil/emacs-from-scratch][emacs from scratch]] and some my idea.
