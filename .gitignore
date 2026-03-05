@@ -59,3 +59,9 @@ flycheck_*.el
 
 # places
 /places
+
+# bookmarks
+bookmarks
+
+# ido.last
+ido.last
