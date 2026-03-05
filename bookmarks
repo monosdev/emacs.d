@@ -1,0 +1,11 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/org/logs/20260305.org")
+ (front-context-string . "**** 打包 Python 程")
+ (rear-context-string . "-03-05 Thursday\n")
+ (position . 50)
+ (last-modified 27049 12733 862527 191000))
+)

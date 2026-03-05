@@ -117,10 +117,15 @@
 ; work log org capture template
 (setq org-capture-templates
       '(
-        ("l" "log"
-         entry (file+datetree "~/org/log.org")
-         "* %?"
-         :empty-lines 0)
+        ("l" "Log"
+         plain (file (lambda ()
+                       (let* ((today    (format-time-string "%Y-%m-%d"))
+                              (dir      (expand-file-name "~/org/logs/"))
+                              (filepath (concat dir today ".org")))
+                         (make-directory dir t)
+                         filepath)))
+         "** %?"
+         :empty-lines 1)
         ))
 
 ;;; init.el ends
