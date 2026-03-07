@@ -114,18 +114,18 @@
 ; wrap the lines in org mode so that things are easier to read
 (add-hook 'org-mode-hook 'visual-line-mode)
 
-; work log org capture template
-(setq org-capture-templates
-      '(
-        ("l" "Log"
-         plain (file (lambda ()
-                       (let* ((today    (format-time-string "%Y-%m-%d"))
-                              (dir      (expand-file-name "~/org/logs/"))
-                              (filepath (concat dir today ".org")))
-                         (make-directory dir t)
-                         filepath)))
-         "** %?"
-         :empty-lines 1)
-        ))
+; org capture templete
+
+; org journal config
+(require 'org-journal)
+
+(setq org-journal-dir "~/org/journal/"
+      org-journal-file-format "%Y-%m-%d.org"
+      org-journal-date-format "%A"
+      org-journal-time-format "[%R] "
+      org-journal-time-prefix "** "
+      org-journal-enable-agenda-integration t
+      org-journal-carryover-delete-empty-journal 'always
+      org-journal-enable-cache t)
 
 ;;; init.el ends

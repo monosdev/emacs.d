@@ -65,3 +65,9 @@ bookmarks
 
 # ido.last
 ido.last
+
+# org journal
+org-journal-cache
+
+# custom.el
+custom.el
